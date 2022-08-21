@@ -1,6 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:lavie_app/presentation/screens/login_screen.dart';
+import 'package:lavie_app/presentation/screens/auth_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -9,7 +9,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       splash: 'assets/logo.png',
-      nextScreen: const LoginScreen(),
+      nextScreen: const AuthScreen(),
       splashTransition: SplashTransition.slideTransition,
     );
   }
